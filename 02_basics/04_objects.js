@@ -48,3 +48,15 @@ console.log(Object.keys(tinderUser)); // returns an array
 console.log(Object.values(tinderUser)); // returns an array
 console.log(Object.entries(tinderUser)); // returns an array
 console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+//object destructuring and json api
+const course = {
+  coursename:"js in hindi",
+  price:"999",
+  courseInstructor : "hitesh"
+}
+
+//course.courseInstructor;
+
+const {courseInstructor:teacher} = course; // destructuring of an object
+console.log(teacher);
