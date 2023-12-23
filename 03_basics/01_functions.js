@@ -22,3 +22,30 @@ function loginUsername(username="sam"){ //default value
     return `${username} just logged in...`
 }
 console.log(loginUsername());
+
+//rest operator -> jitna bhi item h khule m mil rha h, isko bundle m pack kro aur de do -> convert to array
+function calculateCartPrice (...num1){
+return num1;
+}
+
+console.log(calculateCartPrice(200,300,400));
+
+//paas object into a function
+const user = {
+    username:"khushi",
+    price:999
+}
+
+function handleObject(anyObject){
+    console.log(`username is ${anyObject.username} and price is ${anyObject.price}`);
+}
+
+handleObject(user);
+
+const myArr = [10,20,30,40];
+
+function returnSecondValue(getArray){
+    return getArray[1];
+}
+
+console.log(returnSecondValue(myArr));
